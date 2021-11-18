@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&family=Rock+Salt&family=Lora&family=Overpass+Mono&family=Benne&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Size */
+  --title-font-size: 100px;
+  --title-sub-font-size: 20px;
+
+  /* Color  */
+  --font-color: #2d2823;
+  --sub-font-color: #a3a09e;
+  --white: #ffffff;
+  --darkgreen: #8ea4a0;
+  --lightgreen: #c0dbd6;
+  --yellow: #ffe179;
+  --lightyellow: #fff5d3;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 100px auto 50px;
+  max-width: 1000px;
+  font-family: "Noto Sans TC", sans-serif, "arial";
+}
+
+.wrapper {
+  padding: 30px;
+  border: 1px solid var(--lightgreen);
+  border-radius: 3px;
+}
+
+nav {
+  font-size: calc(var(--title-sub-font-size) * 0.75);
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--white);
+  background: var(--darkgreen);
+}
+
+header {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  margin-left: calc(var(--title-font-size) * 1.25);
+  text-align: left;
+  z-index: 1;
+}
+
+.title h1 {
+  margin-right: calc(var(--title-font-size) * -1);
+  font-size: var(--title-font-size);
+  font-weight: bolder;
+  letter-spacing: calc(var(--title-font-size) * 0.3);
+  color: var(--font-color);
+}
+
+.title h3 {
+  margin-right: calc(var(--title-sub-font-size) * -1.5);
+  font-size: var(--title-sub-font-size);
+  font-weight: lighter;
+  letter-spacing: calc(var(--title-sub-font-size) * 1.5);
+  color: var(--sub-font-color);
+}
+
+.block {
+  top: calc(var(--title-font-size) * 0.6);
+  left: calc(var(--title-font-size) * 1.3);
+  position: absolute;
+  margin: 0;
+  width: calc(var(--title-font-size) * 2);
+  height: var(--title-font-size);
+  background: var(--white);
+  z-index: -1;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 650px;
+  height: 360px;
+  background: url("./p1.jpg") center/cover no-repeat;
+}
+
+.menu {
+  position: sticky;
+  display: flex;
+  top: 20px;
+  justify-content: flex-end;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 10px;
+  width: calc(var(--title-sub-font-size) * 1.5);
+  height: calc(var(--title-sub-font-size) * 1.5);
+  color: var(--font-color);
+  background: var(--yellow);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+
+.menu-item:hover,
+.menu-item:after {
+  cursor: pointer;
+}
+
+.section {
+  position: relative;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.section h1 {
+  position: absolute;
+  letter-spacing: 10px;
+  font-size: 5em;
+  font-weight: lighter;
+  font-family: "Lora", "Overpass Mono", "Benne", monospace;
+  color: var(--lightyellow);
+  z-index: -1;
+}
+
+.section-content {
+  margin-left: 8em;
+  padding-top: 2.6em;
+  color: var(--font-color);
+}
+
+.section-content h3,
+.section-content li,
+.section-content p {
+  line-height: 1.7em;
+  letter-spacing: 3px;
+  font-size: 1.25em;
+}
+
+.section-content li {
+  margin-left: 1.5em;
+}
+
+.section-content p {
+  line-height: 2em;
+}
+
+footer.section {
+  margin-top: 150px;
+  background: var(--lightgreen);
+}
+
+h1.footer-title {
+  margin-top: -75px;
+  color: var(--yellow);
+}
+
+footer .section-content {
+  display: flex;
+  margin: 0 0 150px;
+  padding: 30px 0 0 50px;
+}
+
+.footer-content {
+  color: var(--darkgreen);
+}
+
+.footer-content ~ .footer-content {
+  margin-left: 200px;
+}
+
+footer nav {
+  padding: 5px 0;
+  font-family: "Noto Sans TC", sans-serif, "arial";
+  background: var(--darkgreen);
+}
